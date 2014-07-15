@@ -6,6 +6,9 @@
   "bugs": {
     "url": "https://github.com/khalifenizar/emoji-strip/issues"
   },
+  "dependencies": {
+    "gemoji": "^0.1.0"
+  },
   "homepage": "https://github.com/khalifenizar/emoji-strip",
   "keywords": [
     "emoji",
