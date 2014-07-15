@@ -9,6 +9,9 @@
   "dependencies": {
     "gemoji": "^0.1.0"
   },
+  "devDependencies": {
+    "tape": "^2.13.3"
+  },
   "homepage": "https://github.com/khalifenizar/emoji-strip",
   "keywords": [
     "emoji",
@@ -21,5 +24,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/khalifenizar/emoji-strip.git"
+  },
+  "scripts": {
+    "test": "node tests/emoji-strip.js"
   }
 }
