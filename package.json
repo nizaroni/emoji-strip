@@ -1,0 +1,22 @@
+{
+  "name": "emoji-strip",
+  "description": "Strip emoji from a string in Node.js and browsers.",
+  "version": "0.0.0",
+  "author": "Nizar Khalife Iglesias <khalifenizar@gmail.com>",
+  "bugs": {
+    "url": "https://github.com/khalifenizar/emoji-strip/issues"
+  },
+  "homepage": "https://github.com/khalifenizar/emoji-strip",
+  "keywords": [
+    "emoji",
+    "strip",
+    "remove",
+    "emoticons"
+  ],
+  "license": "ISC",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/khalifenizar/emoji-strip.git"
+  }
+}
