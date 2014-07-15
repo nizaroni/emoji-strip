@@ -9,7 +9,7 @@ function emojiStrip (str) {
 }
 
 emojiArray = Object.keys(gemoji.unicode);
-emojiPattern = '[' + emojiArray.join('') + ']+';
+emojiPattern = '(' + emojiArray.join('|') + ')+';
 emojiRegex = new RegExp(emojiPattern, 'g');
 
 emojiStrip.emoji = emojiArray;
