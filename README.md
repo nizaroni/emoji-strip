@@ -42,7 +42,7 @@ Install
 Install with [npm](https://www.npmjs.org/):
 
 ```
-npm install combo-breaker
+npm install emoji-strip
 ```
 
 
