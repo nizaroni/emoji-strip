@@ -36,6 +36,13 @@ tape('strip flag emoji', function (t) {
   t.end()
 })
 
+tape.skip('strip newer emoji', function (t) {
+  emoji = 'y u no strip punch🤜?'
+  t.equal(emojiStrip(emoji), 'y u no strip punch?')
+
+  t.end()
+})
+
 tape('don’t magically remove digits', function (t) {
   emoji = '9999 ways to die🔫 in the west'
   t.equal(emojiStrip(emoji), '9999 ways to die in the west')
