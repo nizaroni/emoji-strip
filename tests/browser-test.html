@@ -1,0 +1,21 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title> emoji-strip browser test </title>
+  </head>
+  <body>
+    <script src="../dist/emoji-strip.min.js"></script>
+    <script>
+      var result = emojiStrip('pizza🍕 time')
+
+      document.write('<h1>' + result + '</h1>')
+
+      if (result === 'pizza time') {
+        document.write('<p>Passed!</p>')
+      } else {
+        document.write('<h2 style="display: inline-block;"><marquee>Failed!</marquee> 😡</h2>')
+      }
+    </script>
+  </body>
+</html>
