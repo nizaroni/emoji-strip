@@ -1,18 +1,9 @@
-var gemoji = require('gemoji')
+var regexCreator = require('emoji-regex')
 
-var emojiPattern
-var emojiArray
-var emojiRegex
+var emojiRegex = regexCreator()
 
-function emojiStrip (str) {
-  return str.replace(emojiStrip.regex, '')
+function emojiStrip (string) {
+  return string.replace(emojiRegex, '')
 }
-
-emojiArray = Object.keys(gemoji.unicode)
-emojiPattern = '(' + emojiArray.join('|') + ')+'
-emojiRegex = new RegExp(emojiPattern, 'g')
-
-emojiStrip.emoji = emojiArray
-emojiStrip.regex = emojiRegex
 
 module.exports = emojiStrip
