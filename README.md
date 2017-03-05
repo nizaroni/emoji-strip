@@ -8,7 +8,6 @@ Examples
 --------
 
 ```js
-var emojiStrip = require('emoji-strip')
 var emoji
 
 emoji = 'thumbs-up👍 for staying strong💪 without emoji please🙏'
@@ -38,10 +37,27 @@ The `emojiStrip` function uses the [`emoji-regex`](https://www.npmjs.org/package
 Install
 -------
 
-Install with [npm](https://www.npmjs.org/):
+### For Node.js ###
 
+Install with [npm](https://www.npmjs.org/):
+```bash
+npm install --save emoji-strip
 ```
-npm install emoji-strip
+
+Require it in your program:
+```js
+var emojiStrip = require('emoji-strip')
+```
+
+### For browsers ###
+
+Download one of the versions of `emoji-strip.js`:
+- [emoji-strip.js](https://raw.githubusercontent.com/khalifenizar/emoji-strip/master/dist/emoji-strip.js) (uncompressed)
+- [emoji-strip.min.js](https://raw.githubusercontent.com/khalifenizar/emoji-strip/master/dist/emoji-strip.min.js) (minified)
+
+Link it in your HTML:
+```html
+<script src="emoji-strip.min.js"></script>
 ```
 
 

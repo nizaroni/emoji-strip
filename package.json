@@ -11,7 +11,9 @@
   },
   "devDependencies": {
     "standard": "^9.0.0",
-    "tape": "^4.6.3"
+    "tape": "^4.6.3",
+    "uglify-js": "^2.8.6",
+    "webpack": "^2.2.1"
   },
   "homepage": "https://github.com/khalifenizar/emoji-strip",
   "keywords": [
@@ -27,6 +29,9 @@
     "url": "https://github.com/khalifenizar/emoji-strip.git"
   },
   "scripts": {
-    "test": "standard && node tests/emoji-strip.js"
+    "test": "standard && node tests/emoji-strip.js",
+    "build": "npm run browser && npm run min",
+    "browser": "webpack index.js dist/emoji-strip.js --output-library=emojiStrip --output-library-target=window",
+    "min": "uglifyjs dist/emoji-strip.js --output=dist/emoji-strip.min.js --compress --mangle"
   }
 }
