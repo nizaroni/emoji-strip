@@ -26,6 +26,16 @@ tape('strip emoji with skin tones', function (t) {
   t.end()
 })
 
+tape('strip flag emoji', function (t) {
+  emoji = '🇧🇷Brasil!!🇧🇷!'
+  t.equal(emojiStrip(emoji), 'Brasil!!!')
+
+  emoji = '🇵🇷Puerto Ricooooo!!🇵🇷!'
+  t.equal(emojiStrip(emoji), 'Puerto Ricooooo!!!')
+
+  t.end()
+})
+
 tape('don’t magically remove digits', function (t) {
   emoji = '9999 ways to die🔫 in the west'
   t.equal(emojiStrip(emoji), '9999 ways to die in the west')
