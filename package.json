@@ -10,6 +10,7 @@
     "gemoji": "^0.1.0"
   },
   "devDependencies": {
+    "standard": "^9.0.0",
     "tape": "^4.6.3"
   },
   "homepage": "https://github.com/khalifenizar/emoji-strip",
@@ -26,6 +27,6 @@
     "url": "https://github.com/khalifenizar/emoji-strip.git"
   },
   "scripts": {
-    "test": "node tests/emoji-strip.js"
+    "test": "standard && node tests/emoji-strip.js"
   }
 }
