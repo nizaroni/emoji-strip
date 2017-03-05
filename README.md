@@ -24,15 +24,15 @@ console.log(emojiStrip(emoji))
 API
 ---
 
-### emojiStrip(str) ###
+### emojiStrip(string) ###
 
-Returns a copy of `str` with any emoji characters removed.
+Returns a copy of `string` with any emoji characters removed.
 
 
 Supported emoji
 ---------------
 
-The `emojiStrip` function is capable of removing any emoji that the [`gemoji`](https://www.npmjs.org/package/gemoji) package supports. You can see the list in `gemoji`'s [Supported Gemoji document](https://github.com/wooorm/gemoji/blob/master/Supported-Gemoji.md).
+The `emojiStrip` function uses the [`emoji-regex`](https://www.npmjs.org/package/emoji-regex) package behind the scenes. It can remove any of the emoji supported by that package.
 
 
 Install
