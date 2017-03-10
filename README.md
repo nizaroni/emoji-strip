@@ -1,7 +1,8 @@
 emoji-strip
 ===========
 
-Strip emoji from a string in Node.js and browsers.
+Use [`emoji-regex`](https://github.com/mathiasbynens/emoji-regex)
+to Strip emoji from a string in Node.js and browsers.
 
 
 Examples
@@ -31,7 +32,14 @@ Returns a copy of `string` with any emoji characters removed.
 Supported emoji
 ---------------
 
-The `emojiStrip` function uses the [`emoji-regex`](https://www.npmjs.org/package/emoji-regex) package behind the scenes. It can remove any of the emoji supported by that package.
+The `emojiStrip` function uses
+the [`emoji-regex`](https://www.npmjs.org/package/emoji-regex) package
+behind the scenes.
+It can remove any of the emoji supported by that package.
+
+Currently, it supports all emoji up to
+[Unicode Version 10](http://emojipedia.org/unicode-10.0/)
+except for emoji sequences.
 
 
 Install
