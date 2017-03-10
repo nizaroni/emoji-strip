@@ -36,9 +36,22 @@ tape('strip flag emoji', function (t) {
   t.end()
 })
 
-tape.skip('strip newer emoji', function (t) {
-  emoji = 'y u no strip punch🤜?'
+tape('strip Unicode Version 9.0 emoji', function (t) {
+  emoji = 'y u no strip 🤜punch🤛🏿?'
   t.equal(emojiStrip(emoji), 'y u no strip punch?')
+
+  emoji = 'fencing🤺 it up'
+  t.equal(emojiStrip(emoji), 'fencing it up')
+
+  t.end()
+})
+
+tape('strip Unicode Version 10.0 emoji', function (t) {
+  emoji = 'emoji are \u{1F9D9}magic'
+  t.equal(emojiStrip(emoji), 'emoji are magic')
+
+  emoji = 't-rex\u{1F996}'
+  t.equal(emojiStrip(emoji), 't-rex')
 
   t.end()
 })

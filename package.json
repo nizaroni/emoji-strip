@@ -7,7 +7,7 @@
     "url": "https://github.com/khalifenizar/emoji-strip/issues"
   },
   "dependencies": {
-    "emoji-regex": "^6.1.0"
+    "emoji-regex": "^6.1.3"
   },
   "devDependencies": {
     "standard": "^9.0.0",
