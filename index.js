@@ -1,9 +1,9 @@
-var regexCreator = require('emoji-regex')
+var regexCreator = require('emoji-regex');
 
-var emojiRegex = regexCreator()
+var emojiRegex = regexCreator();
 
-function emojiStrip (string) {
-  return string.replace(emojiRegex, '')
+function emoji_strip (string) {
+  return string.replace(emojiRegex, '');
 }
 
-module.exports = emojiStrip
+module.exports = emoji_strip;
