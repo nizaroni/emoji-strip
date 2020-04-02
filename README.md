@@ -38,7 +38,7 @@ behind the scenes.
 It can remove any of the emoji supported by that package.
 
 Currently, it supports all emoji up to
-[Unicode Version 10](http://emojipedia.org/unicode-10.0/)
+[Unicode Version 12](http://emojipedia.org/unicode-12.0/)
 except for emoji sequences.
 
 
